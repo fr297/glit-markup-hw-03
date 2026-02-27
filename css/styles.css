@@ -100,7 +100,6 @@ ul {
   background-color: #f4f4fd;
 }
 .team-item {
-  width: 100%;
   background-color: #fff;
 }
 
@@ -123,7 +122,7 @@ ul {
   letter-spacing: 0.02em;
 }
 
-footer {
+.bottom-page {
   background-color: #2e2f42;
 }
 
@@ -138,7 +137,7 @@ footer {
   letter-spacing: 0.03em;
 }
 
-footer p {
-  color: #e7e9fc;
+.bottom-page-paragraph {
+  color: #f4f4fd;
   letter-spacing: 0.02em;
 }
