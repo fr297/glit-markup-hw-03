@@ -5,6 +5,35 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.main-navigation {
+  display: flex;
+  gap: 76px;
+  align-items: center;
+}
+
 .logo {
   text-decoration: none;
   color: #2e2f42;
@@ -24,11 +53,21 @@ ul {
   list-style: none;
 }
 
+.navigation-list {
+  display: flex;
+  gap: 40px;
+}
+
 .navigation-link {
   text-decoration: none;
   color: #2e2f42;
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+
+.contact-list {
+  display: flex;
+  gap: 40px;
 }
 
 .navigation-link:hover,
@@ -49,21 +88,32 @@ ul {
 }
 
 .hero {
+  padding: 188px 0;
   background-color: #2e2f42;
 }
-.hero-title {
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  width: 50%;
   font-size: 56px;
   font-weight: 700;
   color: #fff;
   text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin-bottom: 48px;
 }
 .hero-cta-button {
   background-color: #4d5ae5;
   color: #fff;
   font-weight: 500;
   font-size: 16px;
+  padding: 16px 32px;
+  border: none;
   cursor: pointer;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -79,6 +129,20 @@ ul {
   text-align: center;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .ternary-title {
@@ -87,9 +151,16 @@ ul {
   letter-spacing: 0.02em;
   line-height: 1.2;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
-.features-list p {
+.features-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+p {
   color: #434455;
   font-size: 16px;
   font-weight: 400;
@@ -99,8 +170,15 @@ ul {
 .team {
   background-color: #f4f4fd;
 }
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
 .team-item {
   background-color: #fff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .worker-name {
@@ -109,6 +187,7 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
 
 .profession {
@@ -117,13 +196,26 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.portfolio-list p {
-  color: #434455;
-  letter-spacing: 0.02em;
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .bottom-page {
+  padding: 100px 0 100px 156px;
   background-color: #2e2f42;
+}
+
+.item-wrapper {
+  padding: 32px 16px;
+}
+
+.portfolio-item {
+  width: 360px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .secondary-logo {
@@ -140,4 +232,6 @@ ul {
 .bottom-page-paragraph {
   color: #f4f4fd;
   letter-spacing: 0.02em;
+  width: 25%;
+  margin-top: 16px;
 }
